@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2025-03-12 17:50:56.435800",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "process_name",
+  "comments",
+  "start_time",
+  "end_time",
+  "user_name",
+  "user",
+  "total_time",
+  "column_break_qdly",
+  "barcode",
+  "user_comment",
+  "process_title"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process Name",
+   "options": "Job Process Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comments",
+   "options": "Job Process Name"
+  },
+  {
+   "columns": 2,
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "options": "Job Process Name",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "options": "Job Process Name",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Link",
+   "label": "User name",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "user_name.employee_name",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "user_name.employee_name",
+   "fieldname": "total_time",
+   "fieldtype": "Duration",
+   "label": "Total Time",
+   "options": "Employee",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_qdly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "in_list_view": 1,
+   "label": "Barcode",
+   "no_copy": 1,
+   "options": "Job Process Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user_comment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User Comment",
+   "no_copy": 1,
+   "options": "Job Process Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "process_name.job_process",
+   "fieldname": "process_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Process Title",
+   "no_copy": 1,
+   "options": "Job Process Name",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-18 09:19:02.736877",
+ "modified_by": "Administrator",
+ "module": "Jobtracker Erpnext",
+ "name": "Process Multiple Table",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

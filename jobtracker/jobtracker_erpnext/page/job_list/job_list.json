@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-03-17 10:08:01.667729",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-03-17 11:00:54.993500",
+ "modified_by": "Administrator",
+ "module": "Jobtracker Erpnext",
+ "name": "job-list",
+ "owner": "Administrator",
+ "page_name": "job-list",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Job List"
+}

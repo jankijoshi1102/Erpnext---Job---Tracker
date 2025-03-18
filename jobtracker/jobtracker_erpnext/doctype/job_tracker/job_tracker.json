@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:JOB-.#####",
+ "creation": "2025-03-18 09:20:00.781603",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "reference_no",
+  "column_break_etsy",
+  "naming_series",
+  "priority",
+  "on_hold",
+  "column_break_e1bc",
+  "status",
+  "due_date",
+  "test",
+  "section_break_sa2a",
+  "customer",
+  "contact",
+  "column_break_6krv",
+  "email_id",
+  "phone",
+  "customer_address",
+  "column_break_5mag",
+  "address",
+  "section_break_ocwk",
+  "job_description",
+  "section_break_0wtn",
+  "process_multiple_table",
+  "section_break_sshx",
+  "invoice_no",
+  "column_break_fitz",
+  "invoice_date",
+  "column_break_ndjp",
+  "cancelled_date",
+  "section_break_v69e",
+  "remarks",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "options": "Today"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "column_break_etsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "JOB-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "SR Number",
+   "options": "JOB-.#####",
+   "read_only": 1
+  },
+  {
+   "default": "Normal",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Normal\nUrgent"
+  },
+  {
+   "default": "Normal",
+   "fieldname": "on_hold",
+   "fieldtype": "Check",
+   "label": "On Hold",
+   "options": "Normal\nUrgent"
+  },
+  {
+   "fieldname": "column_break_e1bc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Quote\nApproved\nAssigned\nReady for Delivery\nInvoiced",
+   "read_only": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_sa2a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_primary_contact",
+   "fetch_if_empty": 1,
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "column_break_6krv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "contact.",
+   "fetch_if_empty": 1,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "contact.mobile_no",
+   "fetch_if_empty": 1,
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "customer.customer_primary_address",
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Customer Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_5mag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ocwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "section_break_0wtn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "process_multiple_table",
+   "fieldtype": "Table",
+   "label": "Process Multiple Table",
+   "options": "Process Multiple Table"
+  },
+  {
+   "fieldname": "section_break_sshx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "column_break_fitz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "column_break_ndjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancelled_date",
+   "fieldtype": "Datetime",
+   "label": "Cancelled Date"
+  },
+  {
+   "fieldname": "section_break_v69e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Tracker",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Tracker",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-18 09:20:00.781603",
+ "modified_by": "Administrator",
+ "module": "Jobtracker Erpnext",
+ "name": "Job Tracker",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
