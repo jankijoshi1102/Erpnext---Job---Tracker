@@ -15,9 +15,7 @@
   {
    "fieldname": "process_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Job Process",
-   "reqd": 1
+   "label": "Job Process"
   },
   {
    "default": "JPN-.###",
@@ -31,7 +29,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-18 09:18:06.372553",
+ "modified": "2025-03-19 10:44:41.168738",
  "modified_by": "Administrator",
  "module": "Jobtracker Erpnext",
  "name": "Job Process Name",

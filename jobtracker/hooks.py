@@ -219,3 +219,10 @@ app_license = "mit"
 # auth_hooks = [
 #	"jobtracker.auth.validate"
 # ]
+# Export Employee Doctype data as fixture
+fixtures = [
+    {
+        "doctype": "Employee",    # Include Employee Doctype data
+        "filters": []
+    }
+]

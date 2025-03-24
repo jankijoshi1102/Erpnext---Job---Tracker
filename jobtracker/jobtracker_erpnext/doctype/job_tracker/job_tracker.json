@@ -39,7 +39,6 @@
   "cancelled_date",
   "section_break_v69e",
   "remarks",
-  "amended_from",
   "amended_from"
  ],
  "fields": [
@@ -125,7 +124,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "contact.",
+   "fetch_from": "contact.email_id",
    "fetch_if_empty": 1,
    "fieldname": "email_id",
    "fieldtype": "Data",
@@ -136,8 +135,7 @@
    "fetch_if_empty": 1,
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone",
-   "options": "Phone"
+   "label": "Phone"
   },
   {
    "fetch_from": "customer.customer_primary_address",
@@ -170,12 +168,6 @@
   {
    "fieldname": "section_break_0wtn",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "process_multiple_table",
-   "fieldtype": "Table",
-   "label": "Process Multiple Table",
-   "options": "Process Multiple Table"
   },
   {
    "fieldname": "section_break_sshx",
@@ -230,13 +222,19 @@
    "options": "Job Tracker",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "process_multiple_table",
+   "fieldtype": "Table",
+   "label": "Process Multiple Table",
+   "options": "Process Multiple Table"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-18 09:20:00.781603",
+ "modified": "2025-03-20 09:31:27.022956",
  "modified_by": "Administrator",
  "module": "Jobtracker Erpnext",
  "name": "Job Tracker",
