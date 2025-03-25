@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* / Styling alternate rows / */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
+
 <body>
-    <table class="table table-border">
+    <table id="table-outer">
         <thead>
             <tr>
-                <td>SR Number</td>
-                <td>Date</td>
-                <td>Customer</td>
-                <td>Reference No</td>
-                <td>Duo Date</td>
-                <td>Priority</td>
-                <td>Status</td>
-                <td>Process</td>
-                <td>Start Date</td>
-                <td>User Name</td>
-                <td>Action</td>
+                <th>SR Number</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Reference No</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Process</th>
+                <th>Start Time</th>
+                <th>User Name</th>
+                <th>Action</th>
             </tr>
+           
         </thead>
+        
+        <tbody>
+            {% if data != 0 %}
+                {% for record in data %}
+                    <tr>
+                        <!-- <td>{{ workorder}}</td> -->
+                        <td>{{ record.name }}</td>
+                        <td>{{ record.date }}</td>
+                        <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.customer }}</td>
+                        <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.reference_no }}</td>
+                        <td>{{ record.due_date }}</td>
+                        <td>{{ record.priority }}</td>
+                        <td>{{ <record class="status"></record> }}</td>
+                        <td>{{ record.process_name }}</td>
+                        <td>{{ record.start_time }}</td>
+                        <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.user_name }}</td>
+                        {% if record.start_time %}
+                            <td><button id={{ record.barcode }} class="btn btn-danger">Stop</button></td>
+                        {% else %}
+                            <td><button id={{ record.barcode }} class="btn btn-primary">Start</button></td>
+                        {% endif %}
+                    </tr>
+                    <!-- Add a row for job description below each record -->
+                    <!-- <tr> -->
+                        <td colspan="11"><strong>Job Description:</strong>{{ record.job_description }}</td>
+                    <!-- </tr> -->
+                    <!-- <tr style='width:100%;border-left: 1px solid;'>
+                <th style='width:100%; border-right: 1px solid; text-align: left; font-size:14px;display:flex;'><p style='width:105px;'>Job Description:</p>  {{ doc.job_description }}</th>
+             </tr> -->
+                {% endfor %}
+            {% endif %}
+        </tbody>
+        
     </table>
 </body>
+
 </html>
