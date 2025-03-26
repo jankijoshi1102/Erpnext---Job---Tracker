@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-03-26 12:10:08.581561",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-03-26 12:10:08.581561",
+ "modified_by": "Administrator",
+ "module": "Jobtracker Erpnext",
+ "name": "employee-checkin-pag",
+ "owner": "Administrator",
+ "page_name": "employee-checkin-pag",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Employee Check-in"
+}

@@ -88,8 +88,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Quote\nApproved\nAssigned\nReady for Delivery\nInvoiced",
-   "read_only": 1
+   "options": "Quote\nApproved\nAssigned\nReady for Delivery\nInvoiced"
   },
   {
    "fieldname": "due_date",
@@ -234,7 +233,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-20 09:31:27.022956",
+ "modified": "2025-03-26 10:22:17.905633",
  "modified_by": "Administrator",
  "module": "Jobtracker Erpnext",
  "name": "Job Tracker",

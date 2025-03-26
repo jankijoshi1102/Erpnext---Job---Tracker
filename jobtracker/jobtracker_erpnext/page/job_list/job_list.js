@@ -435,8 +435,8 @@ function get_job_data(page,from_date, to_date, processname, customer, refrenceno
                     $(frappe.render_template('job_list', { data: filteredRecords })).appendTo(page.body);
                 }
                 else{
-                $(frappe.render_template('job_list', { data: records })).appendTo(page.body);}
-
+                $(frappe.render_template('job_list', { data: records })).appendTo(page.body);
+                }
 
                 const section = document.getElementsByClassName('layout-main-section');
                 const lastTable = section[0].querySelector('table:last-child');

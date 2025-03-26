@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job List</title>
-    <style>
+    <title>Employee Checkin</title>
+    <!-- <style>
         table {
             width: 100%;
             border-collapse: collapse;
@@ -27,11 +27,11 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <table id="table-outer">
+    <!-- <table id="table-outer">
         <thead>
             <tr>
                 <th>SR Number</th>
@@ -54,14 +54,14 @@
                 {% for record in data %}
                     <tr>
                         <!-- <td>{{ workorder}}</td> -->
-                        <td>{{ record.name }}</td>
-                        <td>{{ record.date }}</td>
+                        <!-- <td>{{ record.name }}</td> -->
+                        <!-- <td>{{ record.date }}</td>
                         <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.customer }}</td>
                         <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.reference_no }}</td>
                         <td>{{ record.due_date }}</td>
                         <td>{{ record.priority }}</td>
                         <!-- <td>{{ <record class="status"></record> }}</td> -->
-                        <td>{{ record.status }}</td>
+                        <!-- <td>{{ record.status }}</td>
                         <td>{{ record.process_name }}</td>
                         <td>{{ record.start_time }}</td>
                         <td style="overflow: hidden; white-space: nowrap; max-width: 120px;">{{ record.user_name }}</td>
@@ -70,19 +70,19 @@
                         {% else %}
                             <td><button id={{ record.barcode }} class="btn btn-primary">Start</button></td>
                         {% endif %}
-                    </tr>
+                    </tr> -->
                     <!-- Add a row for job description below each record -->
                     <!-- <tr> -->
-                        <td colspan="11"><strong>Job Description:</strong>{{ record.job_description }}</td>
+                        <!-- <td colspan="11"><strong>Job Description:</strong>{{ record.job_description }}</td> -->
                     <!-- </tr> -->
                     <!-- <tr style='width:100%;border-left: 1px solid;'>
                 <th style='width:100%; border-right: 1px solid; text-align: left; font-size:14px;display:flex;'><p style='width:105px;'>Job Description:</p>  {{ doc.job_description }}</th>
              </tr> -->
-                {% endfor %}
-            {% endif %}
-        </tbody>
+                <!-- {% endfor %}
+            {% endif %} --> 
+        <!-- </tbody>
         
-    </table>
+    </table> -->
 </body>
 
 </html>
