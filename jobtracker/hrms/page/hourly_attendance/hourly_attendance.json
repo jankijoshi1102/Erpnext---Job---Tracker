@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-03-27 10:23:38.109822",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-03-27 10:23:38.109822",
+ "modified_by": "Administrator",
+ "module": "HRMS",
+ "name": "hourly-attendance",
+ "owner": "Administrator",
+ "page_name": "hourly-attendance",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Hourly Rate"
+}
