@@ -1,30 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hourly Attendance</title>
     <style>
-        table{
+        table {
             width: 100%;
             border-collapse: collapse;
         }
-
-        table,
-        th,
-        td{
+        table, th, td {
             border: 1px solid black;
         }
-
-        th,
-        td{
+        th, td {
             padding: 8px;
             text-align: left;
         }
-
-        /* Style alternate rows */
-        tr:nth-child(even){
-            background-color: aliceblue ;
+        tr:nth-child(even) {
+            background-color: aliceblue;
         }
     </style>
 </head>
@@ -45,28 +38,23 @@
             <tr>
                 <td></td>
                 <td>Date</td>
-
-            </tr>
-            <tr>
-                <td></td>
-                <td>Check Ins </td>
                 <script>
-                     for (let i = 0; i < 7; i++) {
-                    document.write(`
-                        <th>In</th>
-                        <th>Out</th>
-                        <th>Total Time</th>
-                        <th>Pay Out</th>
-                    `);
-                }
+                    for (let i = 0; i < 7; i++) {
+                        document.write(`
+                            <th>In</th>
+                            <th>Out</th>
+                            <th>Total Time</th>
+                            <th>Pay Out</th>
+                        `);
+                    }
                 </script>
             </tr>
             <tr>
                 <td>Employee</td>
-                <td>Standard Rate:<br>Total Time:<br> Total Payout
-                </td>
+                <td>Standard Rate:<br>Total Time:<br> Total Payout</td>
             </tr>
         </thead>
+        <tbody></tbody>
     </table>
 </body>
 </html>
